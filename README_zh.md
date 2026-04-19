@@ -1,13 +1,13 @@
 <div align="center">
 <img width="120" style="padding-top: 50px; margin: 0;" src="https://github.com/wenlng/git-assets/blob/master/go-captcha/gocaptcha_logo.svg?raw=true"/>
-<h1 style="margin: 0; padding: 0">PyCaptcha</h1>
+<h1 style="margin: 0; padding: 0">pi-captcha</h1>
 <p>Python 行为验证码</p>
-<a href="https://pypi.org/project/py-captcha/"><img src="https://img.shields.io/pypi/v/py-captcha.svg"/></a>
-<a href="https://pypi.org/project/py-captcha/"><img src="https://img.shields.io/pypi/pyversions/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha/releases"><img src="https://img.shields.io/github/v/release/wenlng/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-green.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha"><img src="https://img.shields.io/github/stars/wenlng/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha"><img src="https://img.shields.io/github/last-commit/wenlng/py-captcha.svg"/></a>
+<a href="https://pypi.org/project/pi-captcha/"><img src="https://img.shields.io/pypi/v/pi-captcha.svg"/></a>
+<a href="https://pypi.org/project/pi-captcha/"><img src="https://img.shields.io/pypi/pyversions/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha/releases"><img src="https://img.shields.io/github/v/release/wenlng/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-green.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha"><img src="https://img.shields.io/github/stars/wenlng/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha"><img src="https://img.shields.io/github/last-commit/wenlng/pi-captcha.svg"/></a>
 </div>
 
 <br/>
@@ -15,7 +15,7 @@
 > [English](README.md) | 中文
 
 <p style="text-align: center">
-<a style="font-weight: bold" href="https://github.com/wenlng/py-captcha">PyCaptcha</a> 是功能强大、模块化且高度可定制的行为式验证码库，支持多种交互式验证码类型：点选（Click）、滑动（Slide）、拖拽（Drag-Drop） 和 旋转（Rotate）。
+<a style="font-weight: bold" href="https://github.com/wenlng/pi-captcha">pi-captcha</a> 是功能强大、模块化且高度可定制的行为式验证码库，支持多种交互式验证码类型：点选（Click）、滑动（Slide）、拖拽（Drag-Drop） 和 旋转（Rotate）。
 </p>
 
 <p style="text-align: center"> ⭐️ 如果能帮助到你，请随手给点一个star</p>
@@ -36,7 +36,7 @@
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | [document](http://gocaptcha.wencodes.com)                                  | Captcha 文档                                                                                  |
 | [online demo](http://gocaptcha.wencodes.com/demo/)                         | Captcha 在线演示                                                                                |
-| [py-captcha](https://github.com/wenlng/py-captcha)                         | Python 验证码                                                                                  |
+| [pi-captcha](https://github.com/wenlng/pi-captcha)                         | Python 验证码                                                                                  |
 | [go-captcha](https://github.com/wenlng/go-captcha)                         | Golang 验证码                                                                                  |
 | [next-captcha](https://github.com/wenlng/next-captcha)                     | Node.js 验证码                                                                                 |
 | [go-captcha-example](https://github.com/wenlng/go-captcha-example)         | Golang + 前端 + APP实例                                                                         |
@@ -68,7 +68,7 @@
 
 ## 验证码类型
 
-`py-captcha` 支持以下四种验证码类型，每种类型具有独特的交互方式、生成逻辑和应用场景：
+`pi-captcha` 支持以下四种验证码类型，每种类型具有独特的交互方式、生成逻辑和应用场景：
 
 1. **点选验证码（Click）**：用户在主图像中点击指定的点或字符，支持文本模式和图形模式。
 2. **滑动验证码（Slide）**：用户将拼图块滑动到主图像中的正确位置，支持基本模式和拖拽模式。
@@ -80,18 +80,18 @@
 ## 安装
 
 ```shell
-$ pip install py-captcha
+$ pip install pi-captcha
 ```
 
 ## 导入模块
 
 ```python
-from py_captcha import ClickBuilder, SlideBuilder, RotateBuilder
+from pi_captcha import ClickBuilder, SlideBuilder, RotateBuilder
 
 # 或者按需导入特定模块
-from py_captcha.click import ClickBuilder
-from py_captcha.slide import SlideBuilder
-from py_captcha.rotate import RotateBuilder
+from pi_captcha.click import ClickBuilder
+from pi_captcha.slide import SlideBuilder
+from pi_captcha.rotate import RotateBuilder
 ```
 
 <br />
@@ -113,8 +113,8 @@ from py_captcha.rotate import RotateBuilder
 ### 代码示例
 
 ```python
-from py_captcha import ClickBuilder
-from py_captcha.base import option
+from pi_captcha import ClickBuilder
+from pi_captcha.base import option
 from PIL import Image
 
 # 创建构建器
@@ -244,8 +244,8 @@ print(f"缩略图: {thumb_base64}")
 ### 代码示例
 
 ```python
-from py_captcha import SlideBuilder
-from py_captcha.slide.block import GraphImage
+from pi_captcha import SlideBuilder
+from pi_captcha.slide.block import GraphImage
 from PIL import Image
 
 # 创建构建器
@@ -356,7 +356,7 @@ print(f"拼图: {tile_base64}")
 ### 代码示例
 
 ```python
-from py_captcha import RotateBuilder
+from pi_captcha import RotateBuilder
 from PIL import Image
 
 # 创建构建器

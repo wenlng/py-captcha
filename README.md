@@ -1,20 +1,20 @@
 <div align="center">
 <img width="120" style="padding-top: 50px; margin: 0;" src="https://github.com/wenlng/git-assets/blob/master/go-captcha/gocaptcha_logo.svg?raw=true"/>
-<h1 style="margin: 0; padding: 0">PyCaptcha</h1>
+<h1 style="margin: 0; padding: 0">pi-captcha</h1>
 <p>Behavior Captcha Of Python</p>
-<a href="https://pypi.org/project/py-captcha/"><img src="https://img.shields.io/pypi/v/py-captcha.svg"/></a>
-<a href="https://pypi.org/project/py-captcha/"><img src="https://img.shields.io/pypi/pyversions/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha/releases"><img src="https://img.shields.io/github/v/release/wenlng/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-green.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha"><img src="https://img.shields.io/github/stars/wenlng/py-captcha.svg"/></a>
-<a href="https://github.com/wenlng/py-captcha"><img src="https://img.shields.io/github/last-commit/wenlng/py-captcha.svg"/></a>
+<a href="https://pypi.org/project/pi-captcha/"><img src="https://img.shields.io/pypi/v/pi-captcha.svg"/></a>
+<a href="https://pypi.org/project/pi-captcha/"><img src="https://img.shields.io/pypi/pyversions/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha/releases"><img src="https://img.shields.io/github/v/release/wenlng/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2.0-green.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha"><img src="https://img.shields.io/github/stars/wenlng/pi-captcha.svg"/></a>
+<a href="https://github.com/wenlng/pi-captcha"><img src="https://img.shields.io/github/last-commit/wenlng/pi-captcha.svg"/></a>
 </div>
 
 <br/>
 
 > English | [中文](README_zh.md)
 
-<p style="text-align: center"><a href="https://github.com/wenlng/py-captcha">PyCaptcha</a> is a powerful, modular, and highly customizable behavioral CAPTCHA library that supports multiple interactive CAPTCHA types: Click, Slide, Drag-Drop, and Rotate.</p>
+<p style="text-align: center"><a href="https://github.com/wenlng/pi-captcha">pi-captcha</a> is a powerful, modular, and highly customizable behavioral CAPTCHA library that supports multiple interactive CAPTCHA types: Click, Slide, Drag-Drop, and Rotate.</p>
 
 <p style="text-align: center"> ⭐️ If it helps you, please give a star.</p>
 
@@ -32,7 +32,7 @@
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [document](http://gocaptcha.wencodes.com)                                  | Captcha Documentation                                                                                                                                                                                         |
 | [online demo](http://gocaptcha.wencodes.com/demo/)                         | Captcha Online Demo                                                                                                                                                                                           |
-| [py-captcha](https://github.com/wenlng/py-captcha)                         | Python CAPTCHA Library                                                                                                                                                                                        |
+| [pi-captcha](https://github.com/wenlng/pi-captcha)                         | Python CAPTCHA Library                                                                                                                                                                                        |
 | [go-captcha](https://github.com/wenlng/go-captcha)                         | Golang CAPTCHA Library                                                                                                                                                                                        |
 | [next-captcha](https://github.com/wenlng/next-captcha)                     | Node.js CAPTCHA Library                                                                                                                                                                                       |
 | [go-captcha-example](https://github.com/wenlng/go-captcha-example)         | Golang + Web + APP Example                                                                                                                                                                                    |
@@ -64,7 +64,7 @@
 
 ## CAPTCHA Types
 
-`py-captcha` supports the following four CAPTCHA types, each with unique interaction methods, generation logic, and application scenarios:
+`pi-captcha` supports the following four CAPTCHA types, each with unique interaction methods, generation logic, and application scenarios:
 
 1. **Click CAPTCHA**: Users click specified points or characters on the main image, supporting text and graphic modes.
 2. **Slide CAPTCHA**: Users slide a puzzle piece to the correct position on the main image, supporting basic and drag-drop modes.
@@ -76,18 +76,18 @@
 ## Install
 
 ```shell
-$ pip install py-captcha
+$ pip install pi-captcha
 ```
 
 ## Import Module
 
 ```python
-from py_captcha import ClickBuilder, SlideBuilder, RotateBuilder
+from pi_captcha import ClickBuilder, SlideBuilder, RotateBuilder
 
 # Or import specific modules
-from py_captcha.click import ClickBuilder
-from py_captcha.slide import SlideBuilder
-from py_captcha.rotate import RotateBuilder
+from pi_captcha.click import ClickBuilder
+from pi_captcha.slide import SlideBuilder
+from pi_captcha.rotate import RotateBuilder
 ```
 
 <br />
@@ -109,8 +109,8 @@ The Click CAPTCHA requires users to click specified points or characters on the 
 ### Code Example
 
 ```python
-from py_captcha import ClickBuilder
-from py_captcha.base import option
+from pi_captcha import ClickBuilder
+from pi_captcha.base import option
 from PIL import Image
 
 # Create builder
@@ -240,8 +240,8 @@ The Slide CAPTCHA requires users to slide a puzzle piece to the correct position
 ### Code Example
 
 ```python
-from py_captcha import SlideBuilder
-from py_captcha.slide.block import GraphImage
+from pi_captcha import SlideBuilder
+from pi_captcha.slide.block import GraphImage
 from PIL import Image
 
 # Create builder
@@ -352,7 +352,7 @@ The Rotate CAPTCHA requires users to rotate a thumbnail to align with the main i
 ### Code Example
 
 ```python
-from py_captcha import RotateBuilder
+from pi_captcha import RotateBuilder
 from PIL import Image
 
 # Create builder
@@ -466,4 +466,4 @@ print(f"Thumb Image: {thumb_base64}")
 <br/>
 
 ## LICENSE
-PyCaptcha source code is licensed under the Apache Licence, Version 2.0 [http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html)
+pi-captcha source code is licensed under the Apache Licence, Version 2.0 [http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html)

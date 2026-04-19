@@ -1,6 +1,6 @@
-# py-captcha HTTP Example
+# pi-captcha HTTP Example
 
-This is an HTTP server example project located at `py-captcha/examples/http-server`, which makes it convenient to directly test and develop the `py_captcha` library within the repository.
+This is an HTTP server example project located at `pi-captcha/examples/http-server`, which makes it convenient to directly test and develop the `py_captcha` library within the repository.
 
 
 ## Download the font file
@@ -32,7 +32,7 @@ python app.py
 ### Method 2: Run from the repository root directory
 
 ```bash
-cd /path/to/py-captcha
+cd /path/to/pi-captcha
 python examples/http-server/app.py
 ```
 

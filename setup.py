@@ -1,5 +1,5 @@
 """
-py-captcha - Python behavioral captcha library
+pi-captcha - Python behavioral captcha library
 
 Author: Awen
 Date: 2026/04/19
@@ -12,14 +12,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="py-captcha",
+    name="pi-captcha",
     version="0.0.1",
     author="Awen",
     author_email="wengaolng@gmail.com",
     description="Python behavioral captcha library with click, slide, drag, and rotate challenges",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/wenlng/py-captcha",
+    url="https://github.com/wenlng/pi-captcha",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

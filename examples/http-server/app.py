@@ -1,5 +1,5 @@
 """
-py-captcha HTTP example server
+pi-captcha HTTP example server
 """
 import json
 import sys
@@ -16,12 +16,12 @@ REPO_ROOT = BASE_DIR.parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from py_captcha import ClickBuilder, RotateBuilder, SlideBuilder
-from py_captcha.base import option
-from py_captcha.click import validate as click_validate
-from py_captcha.rotate import validate as rotate_validate
-from py_captcha.slide import validate as slide_validate
-from py_captcha.slide.block import GraphImage
+from pi_captcha import ClickBuilder, RotateBuilder, SlideBuilder
+from pi_captcha.base import option
+from pi_captcha.click import validate as click_validate
+from pi_captcha.rotate import validate as rotate_validate
+from pi_captcha.slide import validate as slide_validate
+from pi_captcha.slide.block import GraphImage
 
 app = Flask(__name__)
 CORS(app)
